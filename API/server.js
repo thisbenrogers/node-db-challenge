@@ -4,7 +4,7 @@ const cors = require('cors');
 
 
 // ***require routers here
-
+const ProjectRouter = require('../projects/project-router');
 //  ***
 
 const server = express();
@@ -14,7 +14,7 @@ server.use(express.json());
 server.use(cors());
 
 // *** server.use() reference routers from above in this file here
-
+server.use('/api/projects', ProjectRouter);
 // ***
 
 server.get('/', (req, res) => {
