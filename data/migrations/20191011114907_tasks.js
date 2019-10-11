@@ -17,6 +17,15 @@ exports.up = function(knex) {
       .notNullable()
       .defaultTo(false);
 
+    tasks
+      .integer('pro_id')
+      .unsigned()
+      .notNullable()
+      .references('id')
+      .inTable('projects')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE');
+
   })
 };
 
