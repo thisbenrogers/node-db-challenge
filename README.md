@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+`SQL` is the Structured Query Language that we use to manage data that held in a `Realtional Database`
+
 - [ ] Why do tables need a `primary key`?
+
+Mainly so that we can implement relationships between tables, using the `primary key` as a target for a `foreign key`, but also for ordering.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+`Foreign Key`
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+We will need another third table specifically to `join` a `foreign key` from each table.
 
 ## Minimum Viable Product
 
